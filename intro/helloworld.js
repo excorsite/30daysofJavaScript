@@ -143,3 +143,40 @@ const webTex = ["HTML", "CSS", "JavaScript", "React", "node"];
 
 console.log(webTex.includes("node"));
 console.log(webTex.includes("C"));
+
+// .... Checking array....
+
+const number12 = [1, 2, 3, 4, 5];
+console.log(Array.isArray(number12));
+
+const num = 100;
+console.log(Array.isArray(num));
+
+//....Converting array to string....
+const num1 = [1, 2, 3, 4, 5];
+console.log(num1.toString());
+
+const names = ["Brook", "prasana", "Luffy"];
+console.log(names.toString());
+
+//... Joining array elements.....
+const num2 = [1, 2, 3, 4, 5];
+console.log(num2.join());
+
+const name1 = ["Ram", "krishna", "Bishnu", "Shiva"];
+console.log(name1.join());
+console.log(name1.join(""));
+console.log(name1.join("  "));
+console.log(name1.join(","));
+console.log(name1.join("#"));
+
+//....Slicing array elements....
+const num3 = [1, 2, 3, 4, 5, 6];
+console.log(num3.slice()); //-> it copies all item and show
+console.log(num3.slice(0)); // -> it copies all item and show
+console.log(num3.slice(0, num3.length)); // it copies all item
+console.log(num3.slice(1, 4)); // it doesn't include the ending poisition
+
+//....Splice method in array.....
+console.log(num3.splice(0, 1)); // remove the first item
+console.log(num3.splice(3, 3, 7, 8, 9));

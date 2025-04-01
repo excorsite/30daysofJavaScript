@@ -180,3 +180,65 @@ console.log(num3.slice(1, 4)); // it doesn't include the ending poisition
 //....Splice method in array.....
 console.log(num3.splice(0, 1)); // remove the first item
 console.log(num3.splice(3, 3, 7, 8, 9));
+
+//...Adding item to an array using push....
+const arr1 = ["item1", "item2", "item3"];
+arr1.push("new item");
+
+console.log(arr1);
+
+const xyz = [1, 2, 3, 4, 5];
+xyz.push(6);
+
+console.log(xyz);
+
+//...Removing the end element using pop....
+xyz.pop(); // remove one item from the end each.
+console.log(xyz);
+
+//...Removing an element from the beginning....
+xyz.shift();
+console.log(xyz);
+
+//...Add an element from the beginning..
+xyz.unshift(0);
+console.log(xyz);
+
+//...Reversing array order....
+const num4 = [1, 2, 3, 4, 5];
+num4.reverse(); //reverse array order
+
+console.log(num4);
+
+xyz.reverse();
+console.log(xyz);
+
+//....sorting elements in array..
+
+const webs = ["HTML", "CSS", "JavaScript", "React", "Redux", "Node", "MongoDB"];
+
+webs.sort(); //arrange array elements in ascending order.
+console.log(webs);
+
+webs.reverse(); //arrange array elements in descending order.
+console.log(webs);
+
+//....Arrays of arrays....
+const firstNums = [1, 2, 3];
+const SecondNums = [1, 4, 9];
+
+const arrayOFArray = [
+  [1, 2, 3],
+  [1, 2, 4],
+];
+console.log(firstNums, SecondNums);
+console.log(arrayOFArray[1]);
+
+const frontEnd = ["HTML", "CSS", "JS", "React", "Redux"];
+const backEnd = ["Node", "Expess", "MongoDB"];
+const fullstack = [frontEnd, backEnd];
+
+console.log(fullstack); // [Array(5),Array(3)]
+console.log(fullstack.length); // 2
+console.log(fullstack[0]); // ["HTML", "CSS", "JS", "React", "Redux"]
+console.log(fullstack[1]); // ["Node", "Expess", "MongoDB"]

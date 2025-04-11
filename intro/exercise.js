@@ -57,3 +57,19 @@ const last = itCompanies[itCompanies.length - 1];
 console.log("first:", first);
 console.log("middle:", middle);
 console.log("last:", last);
+
+// 8.Change each company name to uppercase one by one and print them out
+
+// using loops
+const companies = ["google", "facebook", "microsoft", "apple", "amazon"];
+
+for (let i = 0; i < companies.length; i++) {
+  console.log(companies[i].toUpperCase());
+}
+
+// using foreach
+const companies1 = ["google", "facebook", "microsoft", "apple", "amazon"];
+
+companies.forEach((company) => {
+  console.log(company.toUpperCase());
+});

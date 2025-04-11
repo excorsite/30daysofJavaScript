@@ -35,3 +35,25 @@ const mixedDataTypes = [
   "Slice",
 ];
 console.log(mixedDataTypes.length);
+
+// 6. Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
+const itCompanies = [
+  "Facebook",
+  "Google",
+  "Microsoft",
+  "Apple",
+  "IBM",
+  "Oracle",
+  "Amazon",
+];
+console.log(itCompanies);
+console.log(itCompanies.length);
+
+//7. Print the first company, middle and last company
+const first = itCompanies[0];
+const middle = itCompanies[Math.floor(itCompanies.length / 2)];
+const last = itCompanies[itCompanies.length - 1];
+
+console.log("first:", first);
+console.log("middle:", middle);
+console.log("last:", last);
